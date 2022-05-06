@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="580.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="schoolreg.SchoolReg">
+   <children>
+      <VBox alignment="TOP_CENTER" layoutX="6.0" layoutY="13.0" prefHeight="580.0" prefWidth="600.0" spacing="15.0" AnchorPane.topAnchor="13.0">
+         <children>
+            <HBox prefHeight="0.0" prefWidth="600.0">
+               <children>
+                  <Label text="Welcome:">
+                     <font>
+                        <Font name="System Bold Italic" size="40.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="welcom">
+                     <HBox.margin>
+                        <Insets top="19.0" />
+                     </HBox.margin></TextField>
+               </children>
+            </HBox>
+            <HBox prefWidth="200.0">
+               <children>
+                  <Label text="FirstName:">
+                     <font>
+                        <Font size="34.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="fisrt" promptText="First Name">
+                     <HBox.margin>
+                        <Insets top="19.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox prefWidth="200.0">
+               <children>
+                  <Label text="LastName:">
+                     <font>
+                        <Font size="34.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="last" promptText="Last Name">
+                     <HBox.margin>
+                        <Insets top="19.0" />
+                     </HBox.margin></TextField>
+               </children>
+            </HBox>
+            <HBox prefWidth="200.0">
+               <children>
+                  <Label text="EducationStage:">
+                     <font>
+                        <Font size="34.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="education" promptText="Education Stage">
+                     <HBox.margin>
+                        <Insets top="19.0" />
+                     </HBox.margin></TextField>
+               </children>
+            </HBox>
+            <HBox prefWidth="200.0">
+               <children>
+                  <Label text="Fees:">
+                     <font>
+                        <Font size="34.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="feeses" promptText="Fees$">
+                     <HBox.margin>
+                        <Insets top="19.0" />
+                     </HBox.margin></TextField>
+               </children>
+            </HBox>
+            <HBox prefWidth="200.0">
+               <children>
+                  <Label text="Address:">
+                     <font>
+                        <Font size="34.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="addr" promptText="address">
+                     <HBox.margin>
+                        <Insets top="19.0" />
+                     </HBox.margin></TextField>
+               </children>
+            </HBox>
+            <Hyperlink fx:id="bank" onAction="#actionprints" text="Show Your Data" />
+            <Button fx:id="bank22" mnemonicParsing="false" onAction="#network" text="Open Bank Elmarefa" />
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label text="Total Grade:">
+                     <font>
+                        <Font size="34.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="grades" promptText="Grade">
+                     <HBox.margin>
+                        <Insets top="13.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <Hyperlink onAction="#actionprintdrade" text="Show Your Grade" />
+            <HBox prefHeight="100.0" prefWidth="200.0" spacing="400.0">
+               <children>
+                  <Button fx:id="exit" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#exitbutton" style="-fx-background-color: Blue;" text="Exit" textFill="WHITE">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="logout" mnemonicParsing="false" onAction="#logoutbutton" style="-fx-background-color: blue;" text="Log Out" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="580.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="schoolreg.SchoolReg">
+   <children>
+      <VBox alignment="TOP_CENTER" prefHeight="580.0" prefWidth="600.0" spacing="15.0" AnchorPane.topAnchor="25.0">
+         <children>
+            <Label text="Welcome In School System">
+               <font>
+                  <Font name="System Bold Italic" size="40.0" />
+               </font>
+            </Label>
+            <HBox prefWidth="200.0">
+               <children>
+                  <Label text="User Name:">
+                     <font>
+                        <Font size="34.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="loginName" promptText="User Name">
+                     <HBox.margin>
+                        <Insets top="13.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox prefWidth="200.0">
+               <children>
+                  <Label text="Password:">
+                     <font>
+                        <Font size="34.0" />
+                     </font>
+                  </Label>
+                  <PasswordField fx:id="passwordlogin" promptText="**********">
+                     <HBox.margin>
+                        <Insets top="13.0" />
+                     </HBox.margin>
+                  </PasswordField>
+               </children>
+            </HBox>
+            <HBox prefWidth="200.0" spacing="80.0">
+               <children>
+                  <Button fx:id="studentBT" minHeight="60.0" mnemonicParsing="false" onAction="#checkloginst" prefWidth="200.0" style="-fx-background-color: Blue;" text="Login AS Student" textFill="#f8f8f8" />
+                  <Button fx:id="teacherBT" minHeight="60.0" mnemonicParsing="false" onAction="#loginth" prefWidth="200.0" style="-fx-background-color: Blue;" text="Login AS Teacher" textFill="#f8f8f8" />
+               </children>
+               <padding>
+                  <Insets left="40.0" />
+               </padding>
+            </HBox>
+            <Label text="------------------------------------------------------OR------------------------------------------------------------" />
+            <HBox prefWidth="200.0">
+               <children>
+                  <Label text="User Name:">
+                     <font>
+                        <Font size="34.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="admintf" promptText="User Name">
+                     <HBox.margin>
+                        <Insets top="13.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox prefWidth="200.0">
+               <children>
+                  <Label text="Password:">
+                     <font>
+                        <Font size="34.0" />
+                     </font>
+                  </Label>
+                  <PasswordField fx:id="adminpass" promptText="**********">
+                     <HBox.margin>
+                        <Insets top="13.0" />
+                     </HBox.margin>
+                  </PasswordField>
+               </children>
+            </HBox>
+            <HBox prefWidth="200.0" spacing="30.0">
+               <children>
+                  <Label text="Login as:">
+                     <font>
+                        <Font size="34.0" />
+                     </font>
+                  </Label>
+                  <CheckBox fx:id="stcheck" mnemonicParsing="false" text="Student">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets top="13.0" />
+                     </HBox.margin>
+                  </CheckBox>
+                  <CheckBox fx:id="thcheck" mnemonicParsing="false" text="Teacher">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets top="13.0" />
+                     </HBox.margin>
+                  </CheckBox>
+               </children>
+            </HBox>
+            <Button fx:id="loginbt" maxWidth="1.7976931348623157E308" minHeight="60.0" mnemonicParsing="false" onAction="#handleButtonAction" prefWidth="200.0" style="-fx-background-color: Blue;" text="Login AS Admin" textFill="#f8f8f8" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
